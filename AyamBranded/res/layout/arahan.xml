@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/hitam2"
+    android:orientation="vertical"
+  >
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp"
+        android:text="Masukkan nilai bacaan terdahulu (kotak merah) pada ruangan &apos;Masukkan bacaan meter terdahulu&apos; kemudian masukkan nilai bacaan meter semasa pada ruangan &apos;Masukkan bacaan meter terkini&apos;. Tekan butang simpan untuk menyimpan bacaan meter semasa. Bacaan meter yang disimpan akan kekal ada walaupun aplikasi ditutup. Tekan butang padam untuk memadam bacaan yang disimpan. Jangan tekan butang &apos;Kira&apos; jika bacaan meter sebelum dan selepas tidak di masukkan kerana akan menyebabkan aplikasi ini tidak bertindak balas. Pengiraan cas elektrik adalah mengikut tarif baru 2014.  "
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/bil_lektrik" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tnb5"
+        android:textSize="20dp" />
+
+  </RelativeLayout>
+</ScrollView>
+		
+</RelativeLayout>

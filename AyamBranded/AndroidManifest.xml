@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elektrik.kalkulator"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="14" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tnbfp"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black" >
+        <activity
+            android:name="com.redz.ayambranded.Splash" android:label="@string/app_name">                 
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+             <activity
+            android:name="com.redz.ayambranded.Toast" android:label="@string/app_name"
+             android:theme="@android:style/Theme.Dialog">                 
+            
+            <intent-filter>
+                <action android:name="com.redz.ayambranded" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+             <activity
+            android:name="com.redz.ayambranded.Toastactivity" android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog">                 
+            
+            <intent-filter>
+                <action android:name="com.redz.ayambranded" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+            <activity
+            android:name="com.redz.ayambranded.MainActivity" android:label="@string/app_name"
+             >                 
+            
+            <intent-filter>
+                <action android:name="com.redz.ayambranded" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+            
+<activity
+            android:name="com.redz.ayambranded.Toastecalculation" android:label="@string/app_name"
+             android:theme="@android:style/Theme.Dialog">                 
+            
+            <intent-filter>
+                <action android:name="com.redz.ayambranded" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+        
+       
+       
+         
+         <activity android:name="com.redz.ayambranded.Menu"/>
+          <activity android:name="com.redz.ayambranded.Arahan"/>
+          <activity android:name="com.redz.ayambranded.Informasi"/>
+    </application>
+
+</manifest>

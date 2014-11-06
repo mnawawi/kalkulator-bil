@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tnb3" >
+
+    <Button
+        android:id="@+id/bInfo"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/bArahan"
+        android:layout_below="@+id/bArahan"
+        android:layout_marginTop="16dp"
+        android:textColor="#FF0000"
+        android:background="@drawable/tnb6"
+        />
+
+    <Button
+        android:id="@+id/bArahan"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+         android:textColor="#FF0000"
+          android:background="@drawable/tnb5"
+       />
+
+    <Button
+        android:id="@+id/bKira"
+        style="@android:style/Animation"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bArahan"
+        android:layout_alignLeft="@+id/bArahan"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/tnb4"
+       
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/bkeluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bInfo"
+        android:layout_below="@+id/bInfo"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/tnbk" />
+
+</RelativeLayout>

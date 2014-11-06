@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tnb7"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/previous"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="Current Meter Reading"
+              android:background="#CC0000" 
+             />
+
+        <TextView
+            android:id="@+id/current"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btoast"
+            android:layout_marginTop="30dp"
+            android:text="Previous Meter Reading" 
+              android:background="#CC0000"
+             />
+
+        <EditText
+            android:id="@+id/previousEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/previous"
+            android:layout_marginTop="22dp"
+            android:ems="10" 
+            android:inputType="numberDecimal" 
+            android:text="0">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/currentEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/current"
+            android:layout_alignRight="@+id/current"
+            android:layout_below="@+id/current"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"  />
+
+        <Button
+            android:id="@+id/btoast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/previousEditText"
+            android:layout_below="@+id/previousEditText"
+            android:layout_marginTop="28dp"
+            android:layout_toLeftOf="@+id/button3"
+            android:background="@drawable/tnb11"
+           />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btoast"
+            android:layout_below="@+id/currentEditText"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/button4"
+            android:background="@drawable/tnb11"
+         />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button2"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignLeft="@+id/button3"
+      
+            android:background="@drawable/tnb10"
+            />
+
+  <TextView
+      android:id="@+id/textView1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/button5"
+      android:layout_alignRight="@+id/currentEditText"
+      android:text="RM:"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textSize="20dp"
+      android:background="@drawable/tnb12" />
+
+  <Button
+      android:id="@+id/button3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/current"
+      android:layout_alignLeft="@+id/textView1"
+      android:background="@drawable/tnb10"
+   />
+
+  <Button
+      android:id="@+id/button5"
+      android:layout_width="300dp"
+      android:layout_height="50dp"
+      android:layout_alignLeft="@+id/button2"
+      android:layout_below="@+id/button4"
+      android:layout_toLeftOf="@+id/textView1"
+      android:background="@drawable/tnb9" />
+  </RelativeLayout>
+  </ScrollView>
+
+</RelativeLayout>

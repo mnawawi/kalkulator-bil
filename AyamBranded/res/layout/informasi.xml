@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill_vertical"
+    android:orientation="vertical" 
+    android:background="@drawable/hitam2">
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tnb13" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:text="Semua kandungan didalam aplikasi ini adalah hak cipta © 2013 IntelligentSmart. Sebarang penciplakan adalah sama sekali tidak dibenarkan. Sebarang masalah, kerosakan dan kerugian yang berlaku semasa menggunakan aplikasi ini adalah tanggungjawab sendiri. Sebarang pertanyaan dan cadangan boleh dihantar ke intelligentsmart@gmail.com. Aplikasi ini dilepaskan oleh IntelligentSmart team."
+        android:textSize="25dp" />
+
+    </RelativeLayout>
+</ScrollView>
+    
+</RelativeLayout>
